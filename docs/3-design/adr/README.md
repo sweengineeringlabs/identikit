@@ -10,9 +10,11 @@ ADRs document significant architectural decisions made during the project. Each 
 
 | ID | Title | Status | Date |
 |----|-------|--------|------|
-| [001](001-canvas-library.md) | Canvas Library Selection | Accepted | 2025-01-01 |
-| [002](002-state-management.md) | State Management Approach | Accepted | 2025-01-01 |
-| [003](003-file-format.md) | Composite File Format | Accepted | 2025-01-01 |
+| [001](001-backend-framework.md) | Backend Framework Selection | Accepted | 2025-12-27 |
+| [002](002-canvas-library.md) | Canvas Library Selection | Accepted | 2025-12-27 |
+| [003](003-state-management.md) | State Management Approach | Accepted | 2025-12-27 |
+| [004](004-file-format.md) | Composite File Format | Accepted | 2025-12-27 |
+| [005](005-ai-providers.md) | AI Provider SPI | Accepted | 2025-12-27 |
 
 ## ADR Template
 
