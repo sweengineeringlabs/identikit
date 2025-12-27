@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 80" fill="none">
+  <!-- Left ear -->
+  <ellipse cx="25" cy="40" rx="15" ry="30" fill="#E8BEAC" stroke="#D4A89A" stroke-width="2"/>
+
+  <!-- Right ear -->
+  <ellipse cx="175" cy="40" rx="15" ry="30" fill="#E8BEAC" stroke="#D4A89A" stroke-width="2"/>
+</svg>

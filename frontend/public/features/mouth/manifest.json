@@ -1,0 +1,11 @@
+{
+  "category": "mouth",
+  "features": [
+    {
+      "id": "mouth-001",
+      "name": "Neutral Mouth",
+      "file": "mouth-001.svg",
+      "tags": ["neutral", "closed"]
+    }
+  ]
+}

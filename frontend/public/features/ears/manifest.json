@@ -1,0 +1,11 @@
+{
+  "category": "ears",
+  "features": [
+    {
+      "id": "ears-001",
+      "name": "Standard Ears",
+      "file": "ears-001.svg",
+      "tags": ["standard", "medium"]
+    }
+  ]
+}

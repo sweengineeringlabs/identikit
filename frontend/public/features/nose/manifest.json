@@ -1,0 +1,11 @@
+{
+  "category": "nose",
+  "features": [
+    {
+      "id": "nose-001",
+      "name": "Standard Nose",
+      "file": "nose-001.svg",
+      "tags": ["standard", "medium"]
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "category": "chin",
+  "features": [
+    {
+      "id": "chin-001",
+      "name": "Round Chin",
+      "file": "chin-001.svg",
+      "tags": ["round", "soft"]
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+[package]
+name = "identikit"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+description = "Digital Facial Composite Platform"
+authors = ["Identikit Contributors"]
+repository = "https://github.com/org/identikit"
+
+[build-dependencies]
+tauri-build = { version = "2.0", features = [] }
+
+[dependencies]
+tauri = { version = "2.0", features = [] }
+tauri-plugin-shell = "2.0"
+tauri-plugin-dialog = "2.0"
+tauri-plugin-fs = "2.0"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+tokio = { version = "1", features = ["full"] }
+anyhow = "1.0"
+thiserror = "1.0"
+uuid = { version = "1.0", features = ["v4", "serde"] }
+chrono = { version = "0.4", features = ["serde"] }
+base64 = "0.22"
+image = "0.25"
+resvg = "0.42"
+tiny-skia = "0.11"
+printpdf = "0.7"
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+
+[dev-dependencies]
+tempfile = "3"
+tokio = { version = "1", features = ["rt-multi-thread", "macros"] }
+
+[features]
+default = ["custom-protocol"]
+custom-protocol = ["tauri/custom-protocol"]
+
+[lib]
+name = "identikit_lib"
+crate-type = ["staticlib", "cdylib", "rlib"]

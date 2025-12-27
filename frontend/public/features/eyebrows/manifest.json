@@ -1,0 +1,11 @@
+{
+  "category": "eyebrows",
+  "features": [
+    {
+      "id": "eyebrows-001",
+      "name": "Natural Brows",
+      "file": "eyebrows-001.svg",
+      "tags": ["natural", "medium"]
+    }
+  ]
+}

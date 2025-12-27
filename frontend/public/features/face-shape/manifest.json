@@ -1,0 +1,11 @@
+{
+  "category": "faceShape",
+  "features": [
+    {
+      "id": "face-001",
+      "name": "Oval Face",
+      "file": "face-001.svg",
+      "tags": ["oval", "standard"]
+    }
+  ]
+}

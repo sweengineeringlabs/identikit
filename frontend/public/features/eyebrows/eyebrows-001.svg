@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 30" fill="none">
+  <!-- Left eyebrow -->
+  <path d="M10 20 Q30 8 70 15" stroke="#3D2314" stroke-width="6" stroke-linecap="round" fill="none"/>
+
+  <!-- Right eyebrow -->
+  <path d="M130 15 Q170 8 190 20" stroke="#3D2314" stroke-width="6" stroke-linecap="round" fill="none"/>
+</svg>

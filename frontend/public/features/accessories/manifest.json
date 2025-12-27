@@ -1,0 +1,11 @@
+{
+  "category": "accessories",
+  "features": [
+    {
+      "id": "glasses-001",
+      "name": "Rectangle Glasses",
+      "file": "glasses-001.svg",
+      "tags": ["glasses", "rectangle"]
+    }
+  ]
+}

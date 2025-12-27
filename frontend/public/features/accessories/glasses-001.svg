@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" fill="none">
+  <!-- Left lens -->
+  <rect x="15" y="10" width="70" height="40" rx="5" fill="none" stroke="#333333" stroke-width="3"/>
+
+  <!-- Right lens -->
+  <rect x="115" y="10" width="70" height="40" rx="5" fill="none" stroke="#333333" stroke-width="3"/>
+
+  <!-- Bridge -->
+  <path d="M85 30 Q100 25 115 30" fill="none" stroke="#333333" stroke-width="3"/>
+
+  <!-- Temple arms -->
+  <line x1="15" y1="20" x2="0" y2="15" stroke="#333333" stroke-width="3"/>
+  <line x1="185" y1="20" x2="200" y2="15" stroke="#333333" stroke-width="3"/>
+</svg>

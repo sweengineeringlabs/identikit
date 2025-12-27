@@ -1,0 +1,11 @@
+{
+  "category": "eyes",
+  "features": [
+    {
+      "id": "eyes-001",
+      "name": "Standard Eyes",
+      "file": "eyes-001.svg",
+      "tags": ["standard", "almond"]
+    }
+  ]
+}

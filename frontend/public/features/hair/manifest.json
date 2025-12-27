@@ -1,0 +1,11 @@
+{
+  "category": "hair",
+  "features": [
+    {
+      "id": "hair-001",
+      "name": "Short Hair",
+      "file": "hair-001.svg",
+      "tags": ["short", "male"]
+    }
+  ]
+}
