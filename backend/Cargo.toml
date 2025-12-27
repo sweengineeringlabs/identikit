@@ -26,9 +26,29 @@ base64 = "0.22"
 image = "0.25"
 resvg = "0.42"
 tiny-skia = "0.11"
+usvg = "0.42"
 printpdf = "0.7"
 tracing = "0.1"
 tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+
+# Directory traversal
+walkdir = "2"
+
+# Faster Mutex for AI state
+parking_lot = "0.12"
+
+# AI Layer - Face Detection (Pure Rust, BSD license)
+rustface = "0.1"
+
+# AI Layer - Face Recognition (MIT license, 128-dim embeddings)
+# Requires dlib C++ library installed. Enable with "dlib" feature.
+dlib-face-recognition = { version = "0.3", optional = true }
+
+# Embedding math
+ndarray = "0.16"
+
+# Async traits
+async-trait = "0.1"
 
 [dev-dependencies]
 tempfile = "3"
@@ -37,6 +57,12 @@ tokio = { version = "1", features = ["rt-multi-thread", "macros"] }
 [features]
 default = ["custom-protocol"]
 custom-protocol = ["tauri/custom-protocol"]
+dlib = ["dep:dlib-face-recognition"]
+onnx = ["dep:ort"]
+
+[dependencies.ort]
+version = "2.0.0-rc.10"
+optional = true
 
 [lib]
 name = "identikit_lib"

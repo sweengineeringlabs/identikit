@@ -11,10 +11,13 @@ use super::composite::CompositeState;
 /// Save the current composite to a file.
 #[tauri::command]
 pub async fn save_composite(path: String, state: State<'_, CompositeState>) -> Result<(), String> {
-    let current = state.current.lock().map_err(|e| e.to_string())?;
-    let composite = current.as_ref().ok_or("No composite loaded")?;
+    // Extract JSON while holding the lock, then drop it before await
+    let json = {
+        let current = state.current.lock().map_err(|e| e.to_string())?;
+        let composite = current.as_ref().ok_or("No composite loaded")?;
+        serde_json::to_string_pretty(composite).map_err(|e| e.to_string())?
+    };
 
-    let json = serde_json::to_string_pretty(composite).map_err(|e| e.to_string())?;
     tokio::fs::write(&path, json)
         .await
         .map_err(|e| e.to_string())?;
