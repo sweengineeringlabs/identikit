@@ -12,6 +12,7 @@ Identikit follows a layered architecture with clear separation between the Tauri
 2. **Fabric.js** - Mature canvas library with object model and manipulation
 3. **Zustand** - Lightweight state management, works well with React
 4. **Rust backend** - Type-safe, performant file I/O and image processing
+5. **ONNX Runtime** - Local AI inference for face detection and recognition
 
 ## HOW: Architecture Layers
 
@@ -42,6 +43,12 @@ Identikit follows a layered architecture with clear separation between the Tauri
 │                      Backend Layer (Rust)                    │
 │  ┌─────────────┐ ┌─────────────┐ ┌─────────────┐            │
 │  │  Commands   │ │   Models    │ │  Services   │            │
+│  └─────────────┘ └─────────────┘ └─────────────┘            │
+├─────────────────────────────────────────────────────────────┤
+│                      AI Layer (ONNX Runtime)                 │
+│  ┌─────────────┐ ┌─────────────┐ ┌─────────────┐            │
+│  │Face Detector│ │  Aligner    │ │  Embedder   │            │
+│  │  (SCRFD)    │ │ (Landmarks) │ │ (ArcFace)   │            │
 │  └─────────────┘ └─────────────┘ └─────────────┘            │
 └─────────────────────────────────────────────────────────────┘
 ```
@@ -97,6 +104,9 @@ Identikit follows a layered architecture with clear separation between the Tauri
 | `load_composite` | Load from file | path |
 | `export_png` | Export image | path, width, height |
 | `export_pdf` | Export document | path, includeMetadata |
+| `detect_faces` | Find faces in image | image_path |
+| `compare_faces` | Compare two photos | image_a, image_b |
+| `compare_to_composite` | Compare composite to reference | composite_png, reference_path |
 
 ## Security Considerations
 
@@ -108,8 +118,10 @@ Identikit follows a layered architecture with clear separation between the Tauri
 ## Related
 
 - [File Format Specification](file-format-spec.md)
+- [AI Face Recognition](ai/face-recognition.md)
+- [Toolchain](toolchain.md)
 - [ADR Index](adr/README.md)
 
 ---
 
-**Last Updated**: 2025-01-01
+**Last Updated**: 2025-12-27
